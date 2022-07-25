@@ -1,16 +1,19 @@
-button,
-button {
-    background: #292c38;
+@import "colors.css";
+
+button, .a-button-wrapper a.button {
+    background: var(--highlighted-area-background);
     padding: 0.5em;
     border-radius: 4px;
-    border: white 1px solid;
+    border: var(--highlight-light) 1px solid;
     font-weight: bold;
+    user-select: none;
+    transition: all 0.2s ease-in-out;
 }
 
-button:disabled {
+button:disabled, .a-button-wrapper a.button.d, .a-button-wrapper a.button.d:hover {
     opacity: 0.5;
     cursor: default;
-    border: black 1px solid;
+    border: var(--blocked-color) 1px solid;
 }
 
 .a-button-wrapper {
@@ -18,20 +21,9 @@ button:disabled {
 }
 
 .a-button-wrapper a.button {
-    background: #292c38;
-    padding: 0.5em;
-    border-radius: 4px;
-    border: white 1px solid;
-    font-weight: bold;
     text-decoration: none;
 }
 
-.a-button-wrapper a.button.d {
-    opacity: 0.5;
-    cursor: default;
-    border: black 1px solid;
-}
-
 button:hover, .a-button-wrapper a.button:hover {
-    transform: scale(1.1);
+    border: var(--focus-color) 1px solid;
 }

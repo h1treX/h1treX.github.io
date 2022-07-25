@@ -1,7 +1,7 @@
 const options = {
     creatorTwitter: "h1treXCS",
     versionInfo: {
-        number: "1.0.0",
+        number: "1.0.1",
         lastUpdated: new Date("Mon Jul 25 2022"),
     },
 }

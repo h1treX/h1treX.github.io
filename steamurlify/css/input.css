@@ -1,7 +1,9 @@
+@import "colors.css";
+
 input {
     background: none;
     border: none;
-    border-bottom: #a5b7d3 1px solid;
+    border-bottom: var(--highlight-light) 1px solid;
     padding: 0.5em 0.25em;
     margin-right: 0.25em;
 }

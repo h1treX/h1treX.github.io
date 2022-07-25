@@ -1,18 +1,20 @@
+@import "colors.css";
+
 * {
     margin: 0;
     padding: 0;
     border: none;
-    color: white;
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     outline: none;
 }
 
 body {
-    background: #171a21;
+    background: var(--background);
 }
 
 header, footer {
-    background: #21252f;
+    background: var(--highlighted-area-background);
     padding: 1em;
     user-select: none;
 }
@@ -30,10 +32,10 @@ div.content {
 
 span.tip {
     font-size: small;
-    color: #a5b7d3;
+    color: var(--highlight-light);
 }
 
 span.warning {
     font-size: small;
-    color: lightcoral;
+    color: var(--warn);
 }
