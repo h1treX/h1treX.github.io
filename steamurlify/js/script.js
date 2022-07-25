@@ -1,11 +1,18 @@
 const options = {
-    creatorTwitter: "h1treXCS"
+    creatorTwitter: "h1treXCS",
+    versionInfo: {
+        number: "1.0.0",
+        lastUpdated: new Date("Mon Jul 25 2022"),
+    },
 }
 let steamUrl;
 
 const twitterLink = document.getElementById("twitter");
 twitterLink.innerText = options.creatorTwitter;
 twitterLink.href = "https://twitter.com/" + options.creatorTwitter;
+
+const versionInfo = document.getElementById("version-info");
+versionInfo.innerText = `v${options.versionInfo.number} (Last updated: ${options.versionInfo.lastUpdated.toDateString()})`
 
 const ipInput = document.getElementById("ip-input"), pwInput = document.getElementById("pw-input");
 
