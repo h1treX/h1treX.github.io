@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+body {
+    background: #171a21;
+}
+
+header, footer {
+    background: #21252f;
+    padding: 1em;
+    user-select: none;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+div.content {
+    margin: 1em;
+}
+
+span.tip {
+    font-size: small;
+    color: #a5b7d3;
+}
+
+span.warning {
+    font-size: small;
+    color: lightcoral;
+}

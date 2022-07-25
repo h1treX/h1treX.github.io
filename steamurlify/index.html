@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SteamURLify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/input.css">
+</head>
+<body>
+<header>
+    <h1>SteamURLify</h1>
+</header>
+<div class="content">
+    <div class="inputs">
+        <input id="ip-input" type="text" placeholder="Server IP with Port*">
+        <input id="pw-input" type="password" placeholder="Server password">
+    </div>
+
+    =>
+
+    <div class="outputs">
+        <div class="a-button-wrapper">
+            <a id="button-output" class="button d">Connect to server</a>
+        </div>
+        <br>
+        <span class="warning">At this point automatic copying of the generated URL is not supported! Please right-click the button above to copy the URL.</span>
+    </div>
+</div>
+
+<footer>&copy; <a id="twitter" target="_blank"></a> 2022</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
