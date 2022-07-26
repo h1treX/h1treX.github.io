@@ -1,6 +1,6 @@
 const options = {
   creatorTwitter: "h1treXCS", versionInfo: {
-    number: "1.0.2", lastUpdated: new Date("Tue Jul 26 2022"),
+    number: "1.0.3", lastUpdated: new Date("Tue Jul 26 2022"),
   },
 }
 let steamUrl;
