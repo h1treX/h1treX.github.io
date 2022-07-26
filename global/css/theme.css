@@ -1,0 +1,28 @@
+.dark-theme {
+  --background: #171a21;
+  --highlighted-area-background: #2b313d;
+  --highlight-dark: #292c38;
+  --highlight-light: #a5b7d3;
+  --warn: lightcoral;
+  --text-color: white;
+  --focus-color: white;
+  --blocked-color: black;
+}
+
+.light-theme {
+  --background: #d3d3da;
+  --highlighted-area-background: #bfbfc9;
+  --highlight-dark: #93939d;
+  --highlight-light: #505056;
+  --warn: red;
+  --text-color: black;
+  --focus-color: black;
+  --blocked-color: white;
+}
+
+#theme-toggle {
+  float: right;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 20px;
+}

@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "theme.css";
 
 button, .a-button-wrapper a.button {
     background: var(--highlighted-area-background);
