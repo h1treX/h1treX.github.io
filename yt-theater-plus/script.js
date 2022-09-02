@@ -1,7 +1,7 @@
 const noParam = document.getElementById("no-param");
 const urlInput = document.getElementById("url-input");
 const goButton = document.getElementById("go-button");
-const urlRegex = /^(?:([A-Za-z]+):)?(\/{0,3})([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/;
+const urlRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/;
 
 const player = document.getElementById("player");
 const playerFrame = document.getElementById("player-frame");
