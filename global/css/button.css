@@ -1,4 +1,4 @@
-@import "theme.css";
+@import "../../h1treX-theming/theme.css";
 
 button, .a-button-wrapper a.button {
     background: var(--highlighted-area-background);
