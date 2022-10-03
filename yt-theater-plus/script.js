@@ -6,13 +6,17 @@ const urlRegex = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9
 const player = document.getElementById("player");
 const playerFrame = document.getElementById("player-frame");
 const playerChat = document.getElementById("player-chat");
+const backHref = document.getElementById("back-href");
+
 const url = window.location.host.split(":")[0];
 const urlParams = new URLSearchParams(window.location.search);
 
 if (urlParams.has("v") && urlParams.get("v") !== "") {
+  const vCode = urlParams.get("v");
   player.style.display = "block";
-  playerFrame.src = `https://www.youtube.com/embed/${urlParams.get("v")}?autoplay=1`
-  playerChat.src = `https://www.youtube.com/live_chat?v=${urlParams.get("v")}&embed_domain=${url}`
+  playerFrame.src = `https://www.youtube.com/embed/${vCode}?autoplay=1`;
+  playerChat.src = `https://www.youtube.com/live_chat?v=${vCode}&embed_domain=${url}`;
+  backHref.href = `https://youtu.be/${vCode}`;
 } else {
   noParam.style.display = "block";
   goButton.onclick = () => {

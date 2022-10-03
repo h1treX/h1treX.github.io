@@ -43,10 +43,21 @@ button:hover {
   width: var(--player-width);
 }
 
-#player #player-chat {
-  position: absolute;
+#player #sidebar {
+  position: fixed;
   top: 0;
   left: var(--player-width);
   height: 100%;
   width: var(--chat-width);
+  display: block;
+}
+
+#player #sidebar #back-href {
+  margin: 8px;
+  font-size: 18px;
+}
+
+#player #sidebar #player-chat {
+  width: 100%;
+  height: calc(100% - 25px);
 }
