@@ -42,5 +42,36 @@ function init() {
 
 init();
 
-addEventListener("fetch", () => {
-})
+class ConnectData {
+  ip: string;
+  password: string;
+
+  constructor(ip: string, password: string) {
+    this.ip = ip
+    this.password = password
+  }
+
+  constructor(string: string) {
+    if (string.startsWith("steam://")) {
+      const splitSteamUrl = string.split("steam://", 2)[1].split("/");
+      this.ip = splitSteamUrl[0]
+      if (splitSteamUrl[1]) {
+        this.password = splitSteamUrl[1]
+      }
+    } else if (string.startsWith("connect")) {
+      const splitConsoleCmd = string.split(";")
+      this.ip = splitConsoleCmd[0].slice(8)
+      if (splitConsoleCmd[1]) {
+        this.password = splitConsoleCmd[1].slice(10)
+      }
+    }
+  }
+
+  get steamUrl(): string {
+    return `steam://${this.ip}/${this.password ? this.password : ''}`
+  }
+
+  get command(): string {
+    return `connect ${this.ip}${this.password ? `; password ${this.password}` : ''}`
+  }
+}
