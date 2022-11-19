@@ -7,16 +7,48 @@
   user-select: none;
 }
 
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  * {
+    font-size: 20px;
+  }
+}
+
 body {
   background-image: url("img/planets-2120004.jpg");
+  background-color: cornflowerblue;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   align-content: center;
-  padding-top: 2em;
 }
 
-h1, h2 {
+header#header {
+  padding-top: 2em;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header.scroll-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1em;
+  z-index: 100;
+}
+
+header, h1, h2 {
   text-align: center;
 }
 
@@ -38,8 +70,11 @@ a.card-link {
 }
 
 a.card-link:hover {
-  /*transform: scale(1.02);*/
-  padding: 0;
+  padding: 0 4px;
+}
+
+a.card-link:active {
+  transform: scale(0.99);
 }
 
 a.card-link .card {
