@@ -1,9 +1,29 @@
 @import "../../h1treX-theming/theme.css";
 
+/*input {*/
+/*    background: none;*/
+/*    border: none;*/
+/*    border-bottom: var(--highlight-light) 1px solid;*/
+/*    padding: 0.5em 0.25em;*/
+/*    margin-right: 0.25em;*/
+/*}*/
+
 input {
-    background: none;
-    border: none;
-    border-bottom: var(--highlight-light) 1px solid;
-    padding: 0.5em 0.25em;
-    margin-right: 0.25em;
+  background: var(--highlight-dark);
+  border: 2px solid var(--highlighted-area-background);
+  border-radius: 4px;
+  padding: 0.5em 0.25em;
+  font-weight: lighter;
+  transition: all ease-in-out 0.2s;
+}
+
+input:focus {
+  background: var(--highlighted-area-background);
+  border-color: var(--highlight-light);
+  border-bottom-color: var(--focus-color);
+}
+
+input:disabled {
+  background: var(--background);
+  opacity: .6;
 }

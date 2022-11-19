@@ -2,21 +2,21 @@
   --background: #171a21;
   --highlighted-area-background: #2b313d;
   --highlight-dark: #292c38;
-  --highlight-light: #a5b7d3;
+  --highlight-light: #4f4f54;
   --warn: lightcoral;
   --text-color: white;
-  --focus-color: white;
+  --focus-color: #5a5a98;
   --blocked-color: black;
 }
 
 .light-theme {
   --background: #eaeaef;
   --highlighted-area-background: #bfbfc9;
-  --highlight-dark: #93939d;
-  --highlight-light: #505056;
+  --highlight-dark: #cbcbd9;
+  --highlight-light: #9696a2;
   --warn: red;
   --text-color: black;
-  --focus-color: black;
+  --focus-color: #6e5353;
   --blocked-color: white;
 }
 
