@@ -1,0 +1,6 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="SteamURLify" type="JavascriptDebugType"
+                   uri="http://localhost:63342/h1treX.github.io/steamurlify/index.html" useBuiltInWebServerPort="true">
+        <method v="2"/>
+    </configuration>
+</component>
